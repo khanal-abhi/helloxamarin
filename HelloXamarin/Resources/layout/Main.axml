@@ -1,14 +1,27 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
-<Button  
-    android:id="@+id/myButton"
-    android:layout_width="match_parent" 
-    android:layout_height="wrap_content" 
-    android:text="@string/hello"
-    />
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/main_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/main_label" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+    <EditText
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/placeholder_message" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+    <Button
+        android:id="@+id/load_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/load_button" />
 </LinearLayout>
-

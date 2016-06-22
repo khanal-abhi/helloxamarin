@@ -2,4 +2,8 @@
 <resources>
 	<string name="hello">Hello World, Click Me!</string>
 	<string name="app_name">HelloXamarin</string>
+
+	<string name="main_label">Please enter the message.</string>
+	<string name="load_button">Load new activity</string>
+	<string name="placeholder_message">Some message ... </string>
 </resources>

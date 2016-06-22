@@ -7,7 +7,8 @@ namespace HelloXamarin
 	[Activity (Label = "HelloXamarin", MainLauncher = true, Icon = "@mipmap/icon")]
 	public class MainActivity : Activity
 	{
-		int count = 1;
+		Button load_button;
+		EditText messageText;
 
 		protected override void OnCreate (Bundle savedInstanceState)
 		{
@@ -18,10 +19,12 @@ namespace HelloXamarin
 
 			// Get our button from the layout resource,
 			// and attach an event to it
-			Button button = FindViewById<Button> (Resource.Id.myButton);
-			
-			button.Click += delegate {
-				button.Text = string.Format ("{0} clicks!", count++);
+
+			load_button = FindViewById<Button> (Resource.Id.load_button);
+			messageText = FindViewById<EditText>(Resource.Id.message);
+
+			load_button.Click += delegate {
+				Toast.MakeText(Application, messageText.Text, ToastLength.Short).Show();
 			};
 		}
 	}
